@@ -1,4 +1,4 @@
-/**
+/** 
  * Every piece of text on the site lives in this file.
  * Edit here once — every section component reads from this object.
  */
@@ -16,9 +16,7 @@ export const content = {
     { id: 'about', label: 'About' },
      { id: 'experience', label: 'Experience' },
     { id: 'skills', label: 'Skills' },
-    { id: 'education', label: 'Education' },
     { id: 'projects', label: 'Projects' },
-    { id: 'soft-skills', label: 'Soft Skills' },
     { id: 'contact', label: 'Contact' },
   ],
 
@@ -79,8 +77,9 @@ export const content = {
     {
       category: 'Mobile',
       icon: 'phoneSmart',
-      skills: [{ name: 'Flutter,' },
-               { name: 'React Native' }
+      skills: [{ name: 'Flutter' },
+               { name: 'React Native' },
+               { name: 'React' },
 
       ],
     },
@@ -144,56 +143,67 @@ export const content = {
       cgpaMax: 4,
       note: 'Up to Level 4 Semester 1 · Final-year undergraduate, expected graduation in 2026.',
     },
+
   ],
 
-  /* ---------- Projects ----------
+  /* ---------- Projects
    * 👉 Replace `code` / `live` with your real repo + deployed URLs,
    *    and `image` with a screenshot in public/images/.
    */
   projects: [
     {
-      title: 'Spice Mountain E-Commerce Website',
-      category: 'web',
-      description:
-        'Full-stack e-commerce site for a Sri Lankan spice brand: product catalogue, search & filters, shopping cart, user accounts and an admin dashboard for orders and inventory.',
-      tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS'],
-      image: null, // e.g. '/images/spice-mountain.png'
-      code: 'https://github.com/MrKavishan', // real repo URL
-      live: null, // hide the Live Demo button until it exists,
-      featured: true,
-    },
-    {
-      title: 'Online Train Ticket Booking Mobile App',
+      title: 'LawAdviser',
       category: 'mobile',
-      description:
-        'Flutter app for searching train routes, picking seats and booking tickets, with Firebase authentication and real-time booking confirmations.',
-      tech: ['Flutter', 'Dart', 'Firebase'],
-      image: null, // e.g. '/images/train-app.png'
-      code: 'https://github.com/MrKavishan', // real repo URL
-      live: null, // hide the Live Demo button until it exists,
-      featured: true,
+      short: 'AI-powered legal awareness mobile application for Sri Lanka.',
+      yearBuilt: 2025,
+      sceneId: 'lawadviser',
+      points: [
+        'Designed and developed a mobile app delivering AI-powered legal guidance to improve legal awareness across Sri Lanka.',
+        'Built a multilingual chatbot supporting local languages and implemented real-time traffic sign detection using image recognition.',
+      ],
+      tech: ['React Native', 'Firebase', 'Mobile AI', 'Multilingual UI'],
+      code: 'https://github.com/MrKavishan',
+      live: null,
     },
     {
-      title: 'Expense Tracker Application',
+      title: 'Secure Event Management System',
       category: 'web',
-      description:
-        'Track income and spending with categories, monthly summaries and simple charts. Built with a REST API backend and a clean, responsive dashboard.',
-      tech: ['React.js', 'Node.js', 'Express.js', 'MySQL'],
-      image: null, // e.g. '/images/expense-tracker.png'
-      code: 'https://github.com/MrKavishan', // real repo URL
-      live: null, // hide the Live Demo button until it exists,
-      featured: false,
+      short: 'Secure, web-based event management platform with QR ticket verification.',
+      yearBuilt: 2025,
+      sceneId: 'secure-event-management-system',
+      points: [
+        'Engineered a secure, web-based event management platform using PHP and MySQL featuring user registration, QR code ticket generation and one-time QR ticket verification to prevent fraud.',
+        'Implemented automated email notifications, a full admin dashboard and Excel export functionality for reporting and data analysis.',
+      ],
+      tech: ['PHP', 'MySQL', 'SQL', 'JS', 'Bootstrap'],
+      code: 'https://github.com/MrKavishan',
+      live: null,
+    },
+    {
+      title: 'Spice Management System',
+      category: 'web',
+      short: 'Inventory management system for spice stock, sales and supplier records.',
+      yearBuilt: 2025,
+      sceneId: 'spice-management-system',
+      points: [
+        'Developed an inventory management system enabling real-time tracking of spice stock levels, sales monitoring and maintenance of supplier and product records.',
+      ],
+      tech: ['React.js', 'Node.js', 'Express.js', 'MySQL', 'Tailwind CSS'],
+      code: 'https://github.com/MrKavishan',
+      live: null,
     },
     {
       title: 'Portfolio Website',
       category: 'web',
-      description:
-        'This site — a fast, accessible single-page portfolio built with React and Tailwind CSS, featuring a dark/light theme, scroll animations and a fully responsive layout.',
+      short: 'Fast, accessible single-page portfolio built with React and Tailwind CSS.',
+      yearBuilt: 2025,
+      sceneId: 'portfolio-website',
+      points: [
+        "Designed and deployed a responsive personal portfolio website showcasing technical skills, projects and professional experience.",
+      ],
       tech: ['React.js', 'Tailwind CSS', 'Vite'],
-      image: null, // e.g. '/images/portfolio.png'
-      code: 'https://github.com/MrKavishan', // real repo URL
-      live: null, // hide the Live Demo button until it exists,
-      featured: false,
+      code: 'https://github.com/MrKavishan',
+      live: null,
     },
   ],
 

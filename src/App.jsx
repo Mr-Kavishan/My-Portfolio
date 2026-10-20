@@ -1,6 +1,5 @@
 import About from './components/About.jsx'
 import Contact from './components/Contact.jsx'
-import Education from './components/Education.jsx'
 import Experience from './components/Experience.jsx'
 import Footer from './components/Footer.jsx'
 import Hero from './components/Hero.jsx'
@@ -9,7 +8,6 @@ import Projects from './components/Projects.jsx'
 import ScrollProgress from './components/ScrollProgress.jsx'
 import SiteBackground from './components/SiteBackground.jsx'
 import Skills from './components/Skills.jsx'
-import SoftSkills from './components/SoftSkills.jsx'
 
 /**
  * Single-page portfolio.
@@ -35,9 +33,7 @@ export default function App() {
         <About />
          <Experience />
         <Skills />
-        <Education />
         <Projects />
-        <SoftSkills />
         <Contact />
       </main>
 

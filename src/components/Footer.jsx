@@ -19,7 +19,7 @@ export default function Footer() {
   }
 
   return (
-    <footer className="border-t border-slate-200/70 bg-white/50 pb-8 dark:border-white/10 dark:bg-navy-950/40">
+    <footer className="border-t border-slate-200/70 bg-white/50 pb-8 dark:border-white/10 dark:bg-ink-950/60">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-10 md:grid-cols-3">
           {/* Brand + contact prompt */}

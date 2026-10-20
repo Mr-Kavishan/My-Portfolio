@@ -14,8 +14,8 @@ export const content = {
   nav: [
     { id: 'home', label: 'Home' },
     { id: 'about', label: 'About' },
+     { id: 'experience', label: 'Experience' },
     { id: 'skills', label: 'Skills' },
-    { id: 'experience', label: 'Experience' },
     { id: 'education', label: 'Education' },
     { id: 'projects', label: 'Projects' },
     { id: 'soft-skills', label: 'Soft Skills' },
@@ -24,26 +24,28 @@ export const content = {
 
   /* ---------- Hero ---------- */
   hero: {
-    greeting: "Hi, I'm",
+    greeting: 'HI THERE,',
     name: 'Kavishan Hettiarachchi',
-    roles: ['Software Engineer', 'Frontend Developer', 'Flutter Developer'],
+    roles: ['Software Engineer', 'Full Stack Developer', 'Mobile App Developer',],
     tagline:
-      'I turn ideas into fast, accessible web and mobile products — currently seeking an internship or entry-level role in software engineering.',
+      'I turn ideas into fast, accessible web and mobile products — currently seeking an Associate Software Engineer role.',
   },
 
   /* ---------- About ---------- */
   about: {
-    // 👉 Replace with your real photo: put the file in public/ and update the path
-    photo: null, // e.g. '/images/me.jpg'
-    bio: [
-      "I'm a final-year Software Engineering undergraduate (BSc Hons) at NSBM Green University, based in Hakmana, Sri Lanka. I love building things end to end — from clean React frontends to Flutter apps and the APIs that power them.",
-      'During my six-month internship at FishiFox (Pvt) Ltd I worked on real production features, collaborated with a team, and learned how to ship software that people actually use. Outside of coursework I lead a campus tech club and take part in events that keep me learning.',
-      "I'm now looking for an internship or entry-level role where I can contribute, keep growing, and work with people who care about quality.",
+    // Photo shown in the About card (file lives in public/)
+    photo: '/me.png',
+    summary:
+      'Motivated final-year Software Engineering undergraduate with hands-on experience developing web and mobile applications. I enjoy solving problems, learning new technologies and turning ideas into practical software — working across programming languages, frameworks, databases, APIs and AI-powered development tools such as Cursor AI and Claude, plus server-side configuration, deployment and debugging. Currently seeking an Associate Software Engineer position where I can apply these skills to real-world projects and keep growing.',
+    facts: [
+      { icon: 'pin', value: 'Colombo, Sri Lanka' },
+      { icon: 'briefcase', value: 'Open to Associate SWE roles' },
+      { icon: 'code', value: 'Web & mobile' },
     ],
     stats: [
-      { value: '6 mo', label: 'Industry internship', icon: 'briefcase' },
+      { value: '14 mo', label: 'Industry experience', icon: 'briefcase' },
       { value: '4+', label: 'Projects shipped', icon: 'rocket' },
-      { value: '3.48', label: 'CGPA / 4.00', icon: 'award' },
+      { value: '3.52', label: 'CGPA / 4.00', icon: 'award' },
     ],
   },
 
@@ -67,16 +69,20 @@ export const content = {
         { name: 'CSS' },
         { name: 'JavaScript' },
         { name: 'React.js' },
+         { name: 'Spring Boot' },
+        { name: 'ASP.NET Core' },
         { name: 'Node.js' },
         { name: 'Express.js' },
-        { name: 'ASP.NET Core' },
         { name: 'Tailwind CSS' },
       ],
     },
     {
       category: 'Mobile',
       icon: 'phoneSmart',
-      skills: [{ name: 'Flutter' }],
+      skills: [{ name: 'Flutter,' },
+               { name: 'React Native' }
+
+      ],
     },
     {
       category: 'Databases',
@@ -94,6 +100,8 @@ export const content = {
       skills: [
         { name: 'Git' },
         { name: 'GitHub' },
+        { name: 'Cursor AI' },
+        { name: 'Claude AI' },
       ],
     },
   ],
@@ -101,36 +109,28 @@ export const content = {
   /* ---------- Experience ---------- */
   experience: [
     {
+      role: 'Trainee Software Engineer',
+      org: 'FishiFox (Pvt) Ltd',
+      period: 'Jan 2026 – Aug 2026',
+      type: 'Industry',
+      points: [
+        'Worked on project-based web and mobile application development, including API integration and database management.',
+        'Handled server-side configuration, debugging, testing and application deployment.',
+        'Collaborated with the development team to deliver functional software solutions.',
+      ],
+    },
+    {
       role: 'Software Engineer Intern',
       org: 'FishiFox (Pvt) Ltd',
-      period: 'June 2025 – December 2025',
+      period: 'July 2025 – Jan 2026',
       type: 'Internship',
       points: [
-        'Contributed to real production features across the company’s web projects.',
-        'Collaborated with senior engineers in code reviews, planning and daily stand-ups.',
-        'Fixed bugs and improved UI responsiveness on existing client applications.',
+        'Delivered practical software solutions within a professional team environment, adhering to project timelines, delivery standards and sprint-based workflows.',
+        'Collaborated with developers, designers and stakeholders to plan, build and ship production-ready features across the project lifecycle.',
+        'Produced clear technical documentation and communicated progress, blockers and outcomes effectively to team members and supervisors.',
       ],
     },
-    {
-      role: 'Project Manager',
-      org: 'STEMUp Club',
-      period: 'Leadership role',
-      type: 'Leadership',
-      points: [
-        'Planned and coordinated club projects, delegating tasks and tracking progress.',
-        'Kept team members and stakeholders aligned through clear communication.',
-      ],
-    },
-    {
-      role: 'Organizing Committee Member',
-      org: 'Mantra Event — IEEE Student Branch',
-      period: '2023',
-      type: 'Leadership',
-      points: [
-        'Helped organize a flagship IEEE Student Branch event on campus.',
-        'Handled logistics, outreach and coordination between volunteers and sponsors.',
-      ],
-    },
+   
   ],
 
   /* ---------- Education ---------- */
@@ -139,8 +139,10 @@ export const content = {
       degree: 'BSc (Hons) Software Engineering',
       school: 'NSBM Green University',
       period: '2022 – 2026',
-      result: 'CGPA 3.48 / 4.00',
-      note: 'Focus on software architecture, web & mobile development, and databases.',
+      result: 'CGPA 3.52 / 4.00',
+      cgpa: 3.52,
+      cgpaMax: 4,
+      note: 'Up to Level 4 Semester 1 · Final-year undergraduate, expected graduation in 2026.',
     },
   ],
 
@@ -207,7 +209,7 @@ export const content = {
 
   /* ---------- Contact ---------- */
   contact: {
-    blurb: "Open to internship and entry-level opportunities — feel free to reach out, I usually reply within a day.",
+    blurb: "Open to Associate Software Engineer opportunities — feel free to reach out, I usually reply within a day.",
     details: [
       { type: 'email', value: 'ukavishan1234@gmail.com', href: 'mailto:ukavishan1234@gmail.com' },
       { type: 'phone', value: '+94 76 087 0731', href: 'tel:+94760870731' },

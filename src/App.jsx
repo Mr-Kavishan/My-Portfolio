@@ -7,9 +7,9 @@ import Hero from './components/Hero.jsx'
 import Navbar from './components/Navbar.jsx'
 import Projects from './components/Projects.jsx'
 import ScrollProgress from './components/ScrollProgress.jsx'
+import SiteBackground from './components/SiteBackground.jsx'
 import Skills from './components/Skills.jsx'
 import SoftSkills from './components/SoftSkills.jsx'
-import Statement from './components/Statement.jsx'
 
 /**
  * Single-page portfolio.
@@ -26,15 +26,15 @@ export default function App() {
         Skip to content
       </a>
 
+      <SiteBackground />
       <ScrollProgress />
       <Navbar />
 
       <main>
         <Hero />
         <About />
-        <Statement />
+         <Experience />
         <Skills />
-        <Experience />
         <Education />
         <Projects />
         <SoftSkills />

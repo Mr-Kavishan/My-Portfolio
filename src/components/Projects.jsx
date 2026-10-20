@@ -22,10 +22,10 @@ function ProjectCard({ project, index }) {
     <article
       ref={ref}
       data-reveal
-      className="flex flex-col overflow-hidden rounded-3xl border border-slate-200/80 bg-white/70 shadow-sm backdrop-blur transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-emerald-500/5 dark:border-white/10 dark:bg-white/5"
+      className="flex flex-col overflow-hidden rounded-3xl border border-slate-200/80 bg-white/70 shadow-sm backdrop-blur transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-emerald-500/5 dark:border-white/8 dark:bg-white/[0.035]"
     >
       {/* Screenshot / abstract placeholder */}
-      <div className="relative aspect-video overflow-hidden bg-gradient-to-br from-emerald-500/15 via-navy-800 to-sky-500/10 dark:from-navy-800 dark:to-navy-950">
+      <div className="relative aspect-video overflow-hidden bg-gradient-to-br from-emerald-500/15 via-ink-800 to-sky-500/10 dark:from-ink-900 dark:to-ink-950">
         <div className="absolute inset-0 bg-[linear-gradient(to_right,rgb(16_24_40/0.12)_1px,transparent_1px),linear-gradient(to_bottom,rgb(16_24_40/0.12)_1px,transparent_1px)] bg-[size:24px_24px]" />
         {project.image ? (
           <img
@@ -49,7 +49,7 @@ function ProjectCard({ project, index }) {
           </div>
         )}
         {/* Hover overlay with buttons */}
-        <div className="absolute inset-0 flex items-center justify-center gap-3 bg-navy-950/60 opacity-0 backdrop-blur-[2px] transition-opacity duration-300 group-hover:opacity-100 group-focus-within:opacity-100">
+        <div className="absolute inset-0 flex items-center justify-center gap-3 bg-ink-950/70 opacity-0 backdrop-blur-[2px] transition-opacity duration-300 group-hover:opacity-100 group-focus-within:opacity-100">
           <a
             href={project.code}
             target="_blank"

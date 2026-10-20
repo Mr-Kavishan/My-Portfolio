@@ -39,15 +39,6 @@ function TimelineItem({ item, index }) {
             {item.role}
           </h3>
           <p className="mt-1 font-medium text-emerald-600 dark:text-emerald-300">{item.org}</p>
-
-          <ul className="mt-4 space-y-2 text-slate-600 dark:text-slate-400">
-            {item.points.map((point) => (
-              <li key={point} className="flex gap-2.5 text-sm leading-relaxed">
-                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400" aria-hidden="true" />
-                {point}
-              </li>
-            ))}
-          </ul>
         </article>
       </div>
     </li>
@@ -63,6 +54,7 @@ export default function Experience() {
           eyebrow="Experience"
           title="Where I've worked"
           subtitle="Internship and leadership experience that taught me how software gets built with a team."
+          className="mb-2"
         />
 
         <div className="relative">

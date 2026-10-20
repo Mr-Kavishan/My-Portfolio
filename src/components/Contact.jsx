@@ -195,7 +195,7 @@ export default function Contact() {
 
           {/* Details + socials */}
           <div ref={detailsRef} data-reveal className="space-y-6">
-            <ul className="card space-y-4 rounded-3xl p-6">
+            <ul className="glass card space-y-4 rounded-3xl p-6">
               {contact.details.map((detail) => {
                 const inner = (
                   <span className="flex items-center gap-4">

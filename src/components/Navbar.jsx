@@ -51,7 +51,7 @@ export default function Navbar() {
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'border-b border-slate-200/60 bg-white/80 shadow-sm backdrop-blur-lg dark:border-white/10 dark:bg-navy-950/70'
+          ? 'border-b border-slate-200/60 bg-white/80 shadow-sm backdrop-blur-lg dark:border-white/10 dark:bg-ink-950/80'
           : 'border-b border-transparent bg-transparent'
       }`}
     >
@@ -113,7 +113,7 @@ export default function Navbar() {
       {/* Mobile menu */}
       <div
         id="mobile-menu"
-        className={`overflow-hidden border-t border-slate-200/60 bg-white/95 backdrop-blur-lg transition-[max-height,opacity] duration-300 dark:border-white/10 dark:bg-navy-950/95 lg:hidden ${
+        className={`overflow-hidden border-t border-slate-200/60 bg-white/95 backdrop-blur-lg transition-[max-height,opacity] duration-300 dark:border-white/10 dark:bg-ink-950/95 lg:hidden ${
           open ? 'max-h-[26rem] opacity-100' : 'max-h-0 opacity-0'
         }`}
       >

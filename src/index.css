@@ -8,12 +8,11 @@
   --font-display: 'Space Grotesk', 'Poppins', system-ui, sans-serif;
   --font-body: 'Inter', system-ui, sans-serif;
 
-  /* Deep navy + electric emerald; violet only appears as an unused Tailwind token */
-  --color-navy-950: #050912;
-  --color-navy-900: #070d1a;
-  --color-navy-800: #0c1526;
-  --color-navy-700: #12203a;
-  --color-navy-600: #1b2f52;
+  /* Near-black "ink" stage (matches the hero) + electric emerald accents */
+  --color-ink-950: #04070c;
+  --color-ink-900: #070c11;
+  --color-ink-800: #0b1217;
+  --color-ink-700: #111a21;
 
   --color-emerald-300: #6ee7b7;
   --color-emerald-400: #34d399;
@@ -39,7 +38,7 @@
   }
 
   .dark body {
-    background-color: var(--color-navy-900);
+    background-color: var(--color-ink-950);
     @apply text-slate-300;
   }
 
@@ -52,7 +51,7 @@
 
   ::selection {
     background: var(--color-emerald-400);
-    color: var(--color-navy-950);
+    color: var(--color-ink-950);
   }
 
   /* Slim, themed scrollbar */
@@ -75,6 +74,24 @@
 .button,
 .core-chip {
   @apply transition-all duration-300;
+}
+
+/* Glassmorphism card — light glass on the white stage, ink glass in dark mode */
+.glass {
+  border: 1px solid rgb(15 23 42 / 0.08);
+  background: rgb(255 255 255 / 0.7);
+  box-shadow:
+    0 10px 30px -12px rgb(15 23 42 / 0.15),
+    0 1px 0 rgb(255 255 255 / 0.6) inset;
+  backdrop-filter: blur(10px);
+}
+.dark .glass,
+:where(.dark) .glass {
+  border-color: rgb(255 255 255 / 0.08);
+  background: rgb(255 255 255 / 0.035);
+  box-shadow:
+    0 24px 60px -34px rgb(0 0 0 / 0.9),
+    0 1px 0 rgb(255 255 255 / 0.04) inset;
 }
 
 /* Nav link underline on hover */

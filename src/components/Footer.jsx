@@ -31,13 +31,7 @@ export default function Footer() {
             <p className="mt-2 max-w-xs text-sm leading-relaxed text-slate-500 dark:text-slate-400">
               {content.contact.blurb}
             </p>
-            <a
-              href="mailto:ukavishan1234@gmail.com"
-              className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-emerald-600 transition-colors hover:text-emerald-500 dark:text-emerald-300"
-            >
-              <Icon name="mail" className="h-4 w-4" />
-              ukavishan1234@gmail.com
-            </a>
+           
           </div>
 
           {/* Socials */}
@@ -74,11 +68,6 @@ export default function Footer() {
               Back to top
             </a>
           </div>
-        </div>
-
-        <div className="mt-8 border-t border-slate-200/60 pt-6 text-center text-xs text-slate-400 dark:border-white/10">
-          Built with React + Tailwind CSS. Content comes from
-          <code className="text-slate-500 dark:text-slate-500">src/data/content.js</code> — edit once, the rest updates.
         </div>
       </div>
     </footer>

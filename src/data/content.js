@@ -277,9 +277,9 @@ export const content = {
       { name: 'LinkedIn', href: 'https://linkedin.com/in/kavishan-hettiarachchi', icon: 'linkedin' },
       { name: 'Email', href: 'mailto:ukavishan1234@gmail.com', icon: 'mail' },
     ],
-    // 👉 Optional: point this at a real endpoint (Formspree, EmailJS, your API).
-    // When null, the form shows a simulated success message only.
-    endpoint: null,
+    // 👉 Email delivery is handled by EmailJS in src/components/Contact.jsx.
+    // Add VITE_EMAILJS_SERVICE_ID / _TEMPLATE_ID / _PUBLIC_KEY to `.env`
+    // (see .env.example) to turn the contact form on.
   },
 
   /* ---------- Footer ---------- */

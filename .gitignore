@@ -1,0 +1,8 @@
+# Local environment / secrets (EmailJS keys live here)
+.env
+.env.*
+!.env.example
+
+# Local tooling caches
+.vite
+*.log

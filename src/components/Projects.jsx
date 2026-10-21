@@ -314,7 +314,7 @@ export default function Projects() {
   }
 
   return (
-    <section id="projects" className="relative overflow-hidden py-20 md:py-28">
+    <section id="projects" className="relative overflow-hidden pt-20 pb-10 md:pt-28 md:pb-14">
       {/* Background ornament */}
       <div
         aria-hidden="true"

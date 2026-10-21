@@ -3,6 +3,7 @@ import { useReveal } from '../hooks/useReveal.js'
 /**
  * Shared section heading: small emerald eyebrow + display-font title.
  * `align="left"` is used by sections that sit beside other content.
+ * `spacing` overrides the default bottom margin (pass a single `mb-*` utility).
  */
 export default function SectionHeading({
   eyebrow,
@@ -11,6 +12,7 @@ export default function SectionHeading({
   align = 'center',
   titleClassName = 'text-3xl md:text-4xl',
   className = '',
+  spacing = '',
 }) {
   const ref = useReveal()
   const isLeft = align === 'left'
@@ -19,7 +21,9 @@ export default function SectionHeading({
     <header
       ref={ref}
       data-reveal
-      className={`${isLeft ? 'mb-10 max-w-2xl' : 'mb-12 text-center md:mb-16'} ${className}`}
+      className={`${isLeft ? 'max-w-2xl' : 'text-center'} ${
+        spacing || (isLeft ? 'mb-10' : 'mb-12 md:mb-16')
+      } ${className}`}
     >
       {eyebrow && (
         <p className="mb-3 font-display text-sm font-semibold uppercase tracking-[0.25em] text-emerald-600 dark:text-emerald-400">

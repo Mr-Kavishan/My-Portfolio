@@ -4,8 +4,8 @@ import { useReveal } from '../hooks/useReveal.js'
 import Icon from './Icon.jsx'
 import SectionHeading from './SectionHeading.jsx'
 
-/** Cards per page: 3 × 2 on large screens (2 × 3 on tablet, 1 per row on mobile). */
-const PAGE_SIZE = 6
+/** Cards per page: 3 × 1 on large screens (2 columns on tablet, 1 per row on mobile). */
+const PAGE_SIZE = 3
 
 const FILTERS = [
   { id: 'all', label: 'All' },
@@ -275,7 +275,7 @@ function ProjectCard({ project, index }) {
   )
 }
 
-/** Projects: filterable 3 × 2 card grid with paged carousel controls. */
+/** Projects: filterable 3 × 1 card grid with paged carousel controls. */
 export default function Projects() {
   const [filter, setFilter] = useState('all')
   const [page, setPage] = useState(1)
@@ -326,11 +326,11 @@ export default function Projects() {
           title="Projects I've brought to life"
           subtitle="A selection of web and mobile experiences built to solve real problems and make everyday tasks easier."
           titleClassName="text-3xl md:text-4xl lg:text-5xl"
-          className="mb-10"
+          spacing="mb-6"
         />
 
         {/* Filter bar */}
-        <div className="mb-8 flex flex-col items-center justify-between gap-4 sm:flex-row">
+        <div className="mb-6 flex flex-col items-center justify-between gap-4 sm:flex-row">
           <p className="text-sm text-slate-500 dark:text-slate-400">
             <span className="font-semibold text-slate-800 dark:text-slate-200">
               {filteredProjects.length}

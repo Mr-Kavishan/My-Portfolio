@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="LawAdviser app preview placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1e1b4b" />
+      <stop offset="0.55" stop-color="#4c1d95" />
+      <stop offset="1" stop-color="#7c3aed" />
+    </linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" />
+      <stop offset="1" stop-color="#ede9fe" />
+    </linearGradient>
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.6" fill="#ffffff" fill-opacity="0.16" />
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)" />
+  <rect width="1200" height="675" fill="url(#dots)" />
+  <circle cx="1030" cy="90" r="220" fill="#a78bfa" fill-opacity="0.22" />
+  <circle cx="120" cy="640" r="240" fill="#22d3ee" fill-opacity="0.14" />
+
+  <g font-family="'Segoe UI', Inter, system-ui, sans-serif">
+    <text x="92" y="228" fill="#c4b5fd" font-size="22" font-weight="700" letter-spacing="6">MOBILE APP · 2026</text>
+    <text x="90" y="330" fill="#ffffff" font-size="78" font-weight="800" letter-spacing="-2">LawAdviser</text>
+    <text x="92" y="392" fill="#e9d5ff" fill-opacity="0.86" font-size="28">AI-powered legal awareness for Sri Lanka</text>
+
+    <g>
+      <rect x="115" y="448" width="196" height="48" rx="24" fill="#ffffff" fill-opacity="0.16" />
+      <text x="213" y="479" fill="#ffffff" font-size="20" font-weight="600" text-anchor="middle">Multilingual chat</text>
+      <rect x="327" y="448" width="212" height="48" rx="24" fill="#ffffff" fill-opacity="0.16" />
+      <text x="433" y="479" fill="#ffffff" font-size="20" font-weight="600" text-anchor="middle">Traffic sign AI</text>
+    </g>
+  </g>
+
+  <g transform="translate(778 92)">
+    <rect width="316" height="500" rx="46" fill="#0b0720" fill-opacity="0.55" stroke="#ffffff" stroke-opacity="0.35" stroke-width="2" />
+    <rect x="16" y="16" width="284" height="468" rx="34" fill="url(#screen)" />
+    <rect x="126" y="30" width="64" height="9" rx="4.5" fill="#4c1d95" fill-opacity="0.35" />
+
+    <g font-family="'Segoe UI', Inter, system-ui, sans-serif">
+      <text x="40" y="92" fill="#4c1d95" font-size="20" font-weight="800">LawAdviser</text>
+      <rect x="40" y="118" width="150" height="14" rx="7" fill="#7c3aed" fill-opacity="0.28" />
+      <rect x="40" y="144" width="210" height="10" rx="5" fill="#7c3aed" fill-opacity="0.16" />
+
+      <rect x="40" y="196" width="176" height="52" rx="18" fill="#7c3aed" fill-opacity="0.12" />
+      <rect x="56" y="212" width="140" height="8" rx="4" fill="#6d28d9" fill-opacity="0.4" />
+      <rect x="56" y="228" width="96" height="8" rx="4" fill="#6d28d9" fill-opacity="0.25" />
+
+      <rect x="88" y="262" width="176" height="52" rx="18" fill="#7c3aed" />
+      <rect x="104" y="278" width="132" height="8" rx="4" fill="#ffffff" fill-opacity="0.85" />
+      <rect x="104" y="294" width="88" height="8" rx="4" fill="#ffffff" fill-opacity="0.6" />
+
+      <rect x="40" y="336" width="192" height="52" rx="18" fill="#7c3aed" fill-opacity="0.12" />
+      <rect x="56" y="352" width="152" height="8" rx="4" fill="#6d28d9" fill-opacity="0.4" />
+      <rect x="56" y="368" width="104" height="8" rx="4" fill="#6d28d9" fill-opacity="0.25" />
+    </g>
+
+    <rect x="16" y="404" width="284" height="80" rx="34" fill="#ffffff" />
+    <rect x="40" y="430" width="236" height="28" rx="14" fill="#f1f5f9" />
+    <circle cx="256" cy="444" r="16" fill="#7c3aed" />
+    <path d="M250 444h12M256 438v12" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" />
+  </g>
+</svg>

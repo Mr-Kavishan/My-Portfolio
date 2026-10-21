@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Secure Event Management System preview placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#052e26" />
+      <stop offset="0.6" stop-color="#065f46" />
+      <stop offset="1" stop-color="#10b981" />
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" />
+      <stop offset="1" stop-color="#ecfdf5" />
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0v40" fill="none" stroke="#ffffff" stroke-opacity="0.08" stroke-width="1" />
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)" />
+  <rect width="1200" height="675" fill="url(#grid)" />
+  <circle cx="1100" cy="620" r="240" fill="#34d399" fill-opacity="0.2" />
+
+  <g font-family="'Segoe UI', Inter, system-ui, sans-serif">
+    <text x="92" y="150" fill="#a7f3d0" font-size="22" font-weight="700" letter-spacing="6">WEB APP · 2026</text>
+    <text x="90" y="222" fill="#ffffff" font-size="56" font-weight="800" letter-spacing="-1.5">Secure Event</text>
+    <text x="90" y="286" fill="#ffffff" font-size="56" font-weight="800" letter-spacing="-1.5">Management</text>
+    <text x="92" y="342" fill="#d1fae5" fill-opacity="0.9" font-size="24">One-time QR tickets · email alerts · admin reports</text>
+  </g>
+
+  <g transform="translate(88 392)">
+    <rect width="150" height="86" rx="18" fill="#ffffff" fill-opacity="0.14" stroke="#ffffff" stroke-opacity="0.25" />
+    <text x="24" y="42" fill="#ffffff" font-size="30" font-weight="800" font-family="'Segoe UI', Inter, system-ui, sans-serif">1.2k</text>
+    <text x="24" y="66" fill="#a7f3d0" font-size="16" font-family="'Segoe UI', Inter, system-ui, sans-serif">tickets issued</text>
+
+    <rect x="170" width="150" height="86" rx="18" fill="#ffffff" fill-opacity="0.14" stroke="#ffffff" stroke-opacity="0.25" />
+    <text x="194" y="42" fill="#ffffff" font-size="30" font-weight="800" font-family="'Segoe UI', Inter, system-ui, sans-serif">0</text>
+    <text x="194" y="66" fill="#a7f3d0" font-size="16" font-family="'Segoe UI', Inter, system-ui, sans-serif">duplicate scans</text>
+  </g>
+
+  <!-- browser mock -->
+  <g transform="translate(660 112)">
+    <rect width="460" height="452" rx="24" fill="url(#panel)" />
+    <path d="M0 24a24 24 0 0 1 24-24h412a24 24 0 0 1 24 24v26H0z" fill="#d1fae5" />
+    <circle cx="30" cy="25" r="6" fill="#10b981" />
+    <circle cx="52" cy="25" r="6" fill="#34d399" />
+    <circle cx="74" cy="25" r="6" fill="#6ee7b7" />
+    <rect x="104" y="15" width="300" height="20" rx="10" fill="#ffffff" fill-opacity="0.9" />
+
+    <g font-family="'Segoe UI', Inter, system-ui, sans-serif">
+      <text x="34" y="102" fill="#064e3b" font-size="22" font-weight="800">Scan to check in</text>
+      <text x="34" y="128" fill="#0f766e" font-size="14">Ticket #EV-2041 · verified once</text>
+    </g>
+
+    <!-- QR block -->
+    <g transform="translate(34 152)">
+      <rect width="132" height="132" rx="16" fill="#ffffff" stroke="#a7f3d0" />
+      <g fill="#065f46">
+        <rect x="16" y="16" width="34" height="34" rx="6" />
+        <rect x="82" y="16" width="34" height="34" rx="6" />
+        <rect x="16" y="82" width="34" height="34" rx="6" />
+        <rect x="60" y="60" width="12" height="12" rx="2" />
+        <rect x="82" y="60" width="12" height="12" rx="2" />
+        <rect x="60" y="82" width="12" height="12" rx="2" />
+        <rect x="82" y="82" width="12" height="12" rx="2" />
+        <rect x="102" y="102" width="14" height="14" rx="2" />
+        <rect x="60" y="102" width="12" height="12" rx="2" />
+      </g>
+      <rect x="27" y="27" width="12" height="12" rx="2" fill="#ffffff" />
+      <rect x="93" y="27" width="12" height="12" rx="2" fill="#ffffff" />
+      <rect x="27" y="93" width="12" height="12" rx="2" fill="#ffffff" />
+    </g>
+
+    <g font-family="'Segoe UI', Inter, system-ui, sans-serif">
+      <rect x="188" y="158" width="236" height="40" rx="12" fill="#ecfdf5" />
+      <text x="206" y="184" fill="#047857" font-size="15" font-weight="600">Checked in · Ayesha F.</text>
+      <rect x="188" y="210" width="236" height="40" rx="12" fill="#ecfdf5" />
+      <text x="206" y="236" fill="#047857" font-size="15" font-weight="600">Checked in · Rahul P.</text>
+      <rect x="188" y="262" width="150" height="40" rx="12" fill="#f0fdf4" />
+      <text x="206" y="288" fill="#0f766e" font-size="15" font-weight="600">Export to Excel</text>
+    </g>
+
+    <rect x="34" y="316" width="392" height="104" rx="16" fill="#f8fafc" />
+    <g fill="#d1fae5">
+      <rect x="54" y="342" width="120" height="10" rx="5" />
+      <rect x="54" y="366" width="240" height="10" rx="5" />
+      <rect x="54" y="390" width="180" height="10" rx="5" />
+    </g>
+    <rect x="318" y="336" width="88" height="30" rx="15" fill="#10b981" />
+    <text x="362" y="356" fill="#ffffff" font-size="13" font-weight="700" text-anchor="middle" font-family="'Segoe UI', Inter, system-ui, sans-serif">VERIFIED</text>
+  </g>
+</svg>

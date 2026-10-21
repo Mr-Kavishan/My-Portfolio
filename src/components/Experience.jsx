@@ -53,21 +53,6 @@ function TimelineItem({ item, index }) {
               </p>
             </div>
           </div>
-
-          <ul className="mt-5 space-y-3 border-t border-slate-200/70 pt-5 dark:border-white/10">
-            {item.points.map((point) => (
-              <li
-                key={point}
-                className="flex gap-3 text-sm leading-relaxed text-slate-600 dark:text-slate-400"
-              >
-                <span
-                  aria-hidden="true"
-                  className="mt-[0.55rem] h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-500/80"
-                />
-                {point}
-              </li>
-            ))}
-          </ul>
         </article>
       </div>
     </li>

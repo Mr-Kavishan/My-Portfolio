@@ -98,19 +98,7 @@ export default function Contact() {
     ].join(' ')
 
   return (
-    <section
-      id="contact"
-      className="relative isolate overflow-hidden pt-10 pb-16 md:pt-12 md:pb-20"
-    >
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-x-0 top-0 -z-10 mx-auto h-72 max-w-4xl rounded-full bg-emerald-400/8 blur-3xl"
-      />
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute -right-24 bottom-0 -z-10 h-64 w-64 rounded-full bg-sky-400/8 blur-3xl"
-      />
-
+    <section id="contact" className="pt-10 pb-16 md:pt-12 md:pb-20">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Contact"
